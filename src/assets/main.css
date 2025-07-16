@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: 'NexaLight';
+  src: url('/fonts/Nexa-ExtraLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NexaHeavy';
+  src: url('/fonts/Nexa-Heavy.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Colors */
+  --color-primary: #5f259f;
+  --color-secondary: #f5f5f5;
+  --color-black : #1E1E1E;
+  --color-white : #FFFFFF;
+
+  /* Font */
+  --font-sans-light: 'NexaLight', sans-serif;
+  --font-sans-bold: 'NexaHeavy', sans-serif;
+
+  /* Font-weight */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+    /* Spacing */
+  --spacing-lg: 56px;
+  --spacing-md: 32px;
+  --spacing-sm: 24px;
+  --spacing-xs: 16px;
+  --spacing-xxs: 8px;
+  
+
+  /* Text size */
+  --text-xxl: 42px;
+  --text-xl: 32px;
+  --text-lg: 24px;
+  --text-md: 20px;
+  --text-sm: 16px;
+  --text-xs: 14px;
+}
+
+/* Custom utility classes using primary color */
+.bg-primary { background-color: var(--color-primary); }
+.bg-primary-50 { background-color: color-mix(in srgb, var(--color-primary) 10%, white); }
+.bg-primary-100 { background-color: color-mix(in srgb, var(--color-primary) 20%, white); }
+.bg-primary-200 { background-color: color-mix(in srgb, var(--color-primary) 30%, white); }
+.bg-primary-500 { background-color: var(--color-primary); }
+.bg-primary-600 { background-color: color-mix(in srgb, var(--color-primary) 90%, black); }
+
+.text-primary { color: var(--color-primary); }
+.text-primary-100 { color: color-mix(in srgb, var(--color-primary) 20%, white); }
+.text-primary-600 { color: color-mix(in srgb, var(--color-primary) 90%, black); }
+.text-primary-700 { color: color-mix(in srgb, var(--color-primary) 85%, black); }
+.text-primary-800 { color: color-mix(in srgb, var(--color-primary) 80%, black); }
+.text-primary-900 { color: color-mix(in srgb, var(--color-primary) 70%, black); }
+
+.border-primary { border-color: var(--color-primary); }
+.border-primary-200 { border-color: color-mix(in srgb, var(--color-primary) 30%, white); }
+.border-primary-300 { border-color: color-mix(in srgb, var(--color-primary) 40%, white); }
+.border-primary-500 { border-color: var(--color-primary); }
+
+.ring-primary { --tw-ring-color: var(--color-primary); }
+.focus\:ring-primary:focus { --tw-ring-color: var(--color-primary); }
+.focus\:border-primary:focus { border-color: var(--color-primary); }
+
+/* Font utility classes */
+.font-sans-light { font-family: var(--font-sans-light); }
+.font-sans-bold { font-family: var(--font-sans-bold); }
+
+/* Default font for body text */
+body {
+  font-family: var(--font-sans-light);
+}
+
+/* Default font for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans-bold);
+}
+
+
+
+
+
+
